@@ -13,14 +13,6 @@ namespace EmployeeManagementSystem.Controllers
     [ApiController]
     public class EmployeesController : ControllerBase
     {
-        ICRUDRepository<Employees, int> _repository;
-        public EmployeesController(ICRUDRepository<Employees, int> repository) => _repository = repository;
-        public ActionResult<IEnumerable<Employees>> Get()
-        {
-            var items = _repository.GetAll();
-            return items.ToList();
-        }
-
         [HttpGet("employee")]
         public Models.Employees GetEmployee()
         {
