@@ -11,7 +11,7 @@ using System.Security.Claims;
 
 namespace EmployeeManagementSystem.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]")] 
     [ApiController]
  
     public class CompaniesController : ControllerBase
