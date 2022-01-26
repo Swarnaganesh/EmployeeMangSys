@@ -37,7 +37,7 @@ namespace EmployeeManagementSystem.Controllers
 
             return item;
         }
-
+ 
          [HttpPost("addnew")]
         public ActionResult<Department> Create(Department dept)
        {

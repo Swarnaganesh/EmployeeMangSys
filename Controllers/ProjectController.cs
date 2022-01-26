@@ -38,7 +38,7 @@ namespace EmployeeManagementSystem.Controllers
             var item = _repository.GetDetails(id);
             if(item==null)
               return NotFound();
-
+ 
               return item;
           }
 

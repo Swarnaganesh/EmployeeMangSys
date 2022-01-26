@@ -68,7 +68,7 @@ namespace EmployeeManagementSystem.Controllers
                return usr;
     
                
-           }
+           } 
 
            [HttpPut("update/{id}")]
            public ActionResult<User> update(int id,User usr)
