@@ -23,7 +23,8 @@ namespace EmployeeManagementSystem.Infrastructure
         public void Create(User item)
         {
           _db.Users.Add(item);
-           _db.SaveChanges();             }
+           _db.SaveChanges();         
+               }
 
         public void Delete(int id) 
         {
