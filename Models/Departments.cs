@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 namespace EmployeeManagementSystem.Models
-{
+{ 
     public class Department
     {
         [Key]
