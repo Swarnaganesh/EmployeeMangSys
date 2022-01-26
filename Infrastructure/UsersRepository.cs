@@ -25,7 +25,7 @@ namespace EmployeeManagementSystem.Infrastructure
           _db.Users.Add(item);
            _db.SaveChanges();             }
 
-        public void Delete(int id)
+        public void Delete(int id) 
         {
             var obj = _db.Users.FirstOrDefault(c=>c.Id==id);
             if(obj==null)

@@ -8,4 +8,4 @@ namespace EmployeeManagementSystem.Infrastructure
         void update(TEntity item);
         void Delete(TIdentity id); 
     }
-}
+} 

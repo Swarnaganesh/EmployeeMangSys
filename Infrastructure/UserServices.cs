@@ -10,7 +10,7 @@ namespace EmployeeManagementSystem.Infrastructure
         Role GetUserRole(int id);
         List<User> GetAll(); 
         User GetDetails(int id);
-    }
+    } 
     public class UserService : IUserService
     {
         EmployeeManagementDBContext _context; 

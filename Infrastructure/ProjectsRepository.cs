@@ -10,7 +10,7 @@ namespace EmployeeManagementSystem.Infrastructure
         public ProjectRepository(EmployeeManagementDBContext db)
         {
             _db = db;
-        }
+        } 
 
         public IEnumerable<Project> GetAll()
         {

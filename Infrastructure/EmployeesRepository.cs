@@ -23,7 +23,7 @@ namespace EmployeeManagementSystem.Infrastructure
         {
             _db.Employees.Add(item);
             _db.SaveChanges();
-        }
+        } 
 
         public void Delete(int id)
         {
