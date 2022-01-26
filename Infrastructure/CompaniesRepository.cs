@@ -9,7 +9,7 @@ namespace EmployeeManagementSystem.Infrastructure
         {
             _db = db;
         }
-
+ 
         public IEnumerable<Company> GetAll()
         {
             return _db.Companies.ToList();
