@@ -3,10 +3,22 @@ using EmployeeManagementSystem.Models;
 
 namespace EmployeeManagementSystem.Infrastructure
 {
-    public class EmployeeDbContext : DbContext
+    public class EmployeeManagementDBContext : DbContext
     {
-        public EmployeeDbContext(DbContextOptions<EmployeeDbContext> options) : base(options) { }
+        public EmployeeManagementDBContext(DbContextOptions<EmployeeManagementDBContext> options) : base(options) { }
 
-        public DbSet<Employees> Employee {get; set;}
+       public DbSet<Employee> Employees {get; set;}
+           
+        public DbSet<Project> Projects {get; set;}
+
+        public DbSet<Company> Companies {get; set;}
+
+        public DbSet<Department> Departments {get; set;}
+
+        public DbSet<User> Users { get; set; }
+
+        public DbSet<Role> Roles { get; set; }
+   
+
     }
 }
