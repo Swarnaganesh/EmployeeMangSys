@@ -75,7 +75,7 @@ namespace EmployeeManagementSystem.Controllers
            {
                if(usr==null)
                return BadRequest();
-                if(id==0)   return BadRequest();
+                if(id==0)  return BadRequest();
                _repository.update(usr);
                return usr;
 

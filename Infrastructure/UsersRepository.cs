@@ -35,7 +35,7 @@ namespace EmployeeManagementSystem.Infrastructure
             _db.SaveChanges();
         }
 
-        public void update(User item)
+        public void update(User item) 
         {
              var obj = _db.Users.FirstOrDefault(c=>c.Id==item.Id);
             if(obj==null)
