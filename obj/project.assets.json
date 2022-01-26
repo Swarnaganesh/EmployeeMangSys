@@ -9583,19 +9583,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\swarna\\.nuget\\packages\\": {}
+    "C:\\Users\\SUGASHINI\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
+      "projectUniqueName": "C:\\EMS\\EmployeeManagementSystem.csproj",
       "projectName": "EmployeeManagementSystem",
-      "projectPath": "C:\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
-      "packagesPath": "C:\\Users\\swarna\\.nuget\\packages\\",
-      "outputPath": "C:\\EmployeeManagementSystem\\obj\\",
+      "projectPath": "C:\\EMS\\EmployeeManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\SUGASHINI\\.nuget\\packages\\",
+      "outputPath": "C:\\EMS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\swarna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SUGASHINI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
