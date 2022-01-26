@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 namespace EmployeeManagementSystem.Models
 {
-    public class Company
+    public class Company 
     {
         [Key]
         public int CompanyId{get; set;}
