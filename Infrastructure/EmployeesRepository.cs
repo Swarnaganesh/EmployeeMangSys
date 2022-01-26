@@ -1,41 +1,42 @@
 using EmployeeManagementSystem.Models;
 namespace EmployeeManagementSystem.Infrastructure
 {
-    public class EmployeesRepository : ICRUDRepository<Employees, int>
+    public class EmployeeRepository : ICRUDRepository<Employee, int>
     {
-        EmployeeDbContext _db;
+        EmployeeManagementDBContext _db;
 
-        public EmployeesRepository(EmployeeDbContext db)
+        public EmployeeRepository(EmployeeManagementDBContext db)
         {
             _db = db;
         }
 
-        public IEnumerable<Employees> GetAll()
+        public IEnumerable<Employee> GetAll()
         {
-            return _db.Employee.ToList();
+            return _db.Employees.ToList();
         }
 
-        public Employees GetDetails(int id)
+        public Employee GetDetails(int id)
         {
-             return _db.Employee.FirstOrDefault(c=>c.EmployeeId==id);
+             return _db.Employees.FirstOrDefault(c=>c.EmployeeId==id);
         }
-        public void Create(Employees item)
+        public void Create(Employee item)
         {
-            throw new NotImplementedException();
+            _db.Employees.Add(item);
+            _db.SaveChanges();
         }
 
         public void Delete(int id)
         {
-            var obj = _db.Employee.FirstOrDefault(c=>c.EmployeeId==id);
+            var obj = _db.Employees.FirstOrDefault(c=>c.EmployeeId==id);
             if(obj==null)
                 return;
-            _db.Employee.Remove(obj);
+            _db.Employees.Remove(obj);
             _db.SaveChanges();
         }
 
-        public void update(Employees item)
+        public void update(Employee item)
         {
-             var obj = _db.Employee.FirstOrDefault(c=>c.EmployeeId==item.EmployeeId);
+             var obj = _db.Employees.FirstOrDefault(c=>c.EmployeeId==item.EmployeeId);
             if(obj==null)
                 return;
             obj.LastName=item.LastName;
