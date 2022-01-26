@@ -11,7 +11,7 @@ namespace EmployeeManagementSystem.Infrastructure
         public DepartmentRepository(EmployeeManagementDBContext db)
 
         {
-
+ 
             _db = db;
 
         }

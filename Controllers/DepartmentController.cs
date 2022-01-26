@@ -35,7 +35,7 @@ namespace EmployeeManagementSystem.Controllers
             if(item==null)
             return NotFound();
 
-            return item;
+            return item; 
         }
  
          [HttpPost("addnew")]
