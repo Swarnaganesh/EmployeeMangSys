@@ -22,7 +22,8 @@ namespace EmployeeManagementSystem.Infrastructure
         public void Create(Company item)
         {
            _db.Companies.Add(item);
-           _db.SaveChanges();              }
+           _db.SaveChanges();           
+              }
 
         public void Delete(int id)
         {
