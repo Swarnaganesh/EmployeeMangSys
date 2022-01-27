@@ -19,6 +19,6 @@ namespace EmployeeManagementSystem.Infrastructure
 
         public DbSet<Role> Roles { get; set; }
    
-
+   
     }
 }

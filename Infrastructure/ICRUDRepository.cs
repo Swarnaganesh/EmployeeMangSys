@@ -6,6 +6,6 @@ namespace EmployeeManagementSystem.Infrastructure
         TEntity GetDetails(TIdentity id);
         void Create(TEntity item);
         void update(TEntity item);
-        void Delete(TIdentity id);
+        void Delete(TIdentity id); 
     }
 }

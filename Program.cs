@@ -17,7 +17,7 @@ builder.Services.AddDbContext<EmployeeManagementSystem.Infrastructure.EmployeeMa
 builder.Services.AddScoped<ICRUDRepository<Project, int>, ProjectRepository>();
 builder.Services.AddScoped<ICRUDRepository<Department, int>, DepartmentRepository>();
 builder.Services.AddScoped<ICRUDRepository<Employee, int>, EmployeeRepository>();
- builder.Services.AddScoped<ICRUDRepository<Company, int>, CompanyRepository>();
+builder.Services.AddScoped<ICRUDRepository<Company, int>, CompanyRepository>();
 builder.Services.AddScoped<ICRUDRepository<User, int>, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>(); 
 //builder.Services.AddHttpContextAccessor();
@@ -28,6 +28,9 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         //options.LoginPath = "~/account/login";
     });
 // Add services to the container.
+
+// Add services to the container.  
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -40,6 +43,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
 }
 app.UseAuthentication();
 app.UseAuthorization();
